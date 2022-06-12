@@ -2,6 +2,12 @@
 <h2>トップページ</h2>
 
 <% @posts.each do |p| %>
-  <%= p.content %>
-  <%= p.created_at %>
+  <div class = "post">
+    <div class = "post-date">
+      <%= p.created_at %>
+    </div>
+    <div class = "post-content">
+      <%= p.content %>
+    </div>
+  </div>
 <% end %>
