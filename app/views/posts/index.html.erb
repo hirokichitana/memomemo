@@ -1,4 +1,7 @@
 <h1>今日も良い日だよ</h1>
 <h2>トップページ</h2>
 
-<%= @post %>
+<% @posts.each do |p| %>
+  <%= p.content %>
+  <%= p.created_at %>
+<% end %>
