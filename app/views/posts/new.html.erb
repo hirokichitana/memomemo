@@ -1,6 +1,7 @@
 <h1>新規投稿ページ</h1>
 
 <%= form_with(model: @post, local: true) do |form| %>
-  <%= form.text_area :content, placeholder:"テキスト" %>
+  <%= form.text_field :content, placeholder:"テキスト" %>
   <%= form.submit "投稿する" %>
 <% end %>
+
